@@ -1,0 +1,1 @@
+workssudo service nginx restartsudo service nginx restart
