@@ -13,3 +13,56 @@
 [2018-09-24 15:37:09 +0300] [1108] [INFO] Worker exiting (pid: 1108)
 [2018-09-24 15:37:09 +0300] [1113] [INFO] Worker exiting (pid: 1113)
 [2018-09-24 12:37:09 +0000] [1105] [INFO] Shutting down: Master
+[2018-09-24 13:13:21 +0000] [378] [INFO] Starting gunicorn 19.6.0
+[2018-09-24 13:13:21 +0000] [378] [INFO] Listening at: http://0.0.0.0:8000 (378)
+[2018-09-24 13:13:21 +0000] [378] [INFO] Using worker: sync
+[2018-09-24 13:13:21 +0000] [381] [INFO] Booting worker with pid: 381
+[2018-09-24 13:13:21 +0000] [382] [INFO] Booting worker with pid: 382
+[2018-09-24 13:13:21 +0000] [383] [INFO] Booting worker with pid: 383
+[2018-09-24 13:13:21 +0000] [385] [INFO] Booting worker with pid: 385
+[2018-09-24 13:13:21 +0000] [386] [INFO] Booting worker with pid: 386
+[2018-09-24 13:14:20 +0000] [378] [INFO] Handling signal: int
+[2018-09-24 16:14:20 +0300] [382] [INFO] Worker exiting (pid: 382)
+[2018-09-24 16:14:20 +0300] [385] [INFO] Worker exiting (pid: 385)
+[2018-09-24 16:14:20 +0300] [386] [INFO] Worker exiting (pid: 386)
+[2018-09-24 16:14:20 +0300] [383] [INFO] Worker exiting (pid: 383)
+[2018-09-24 16:14:20 +0300] [381] [INFO] Worker exiting (pid: 381)
+[2018-09-24 13:14:21 +0000] [378] [INFO] Shutting down: Master
+[2018-09-24 13:21:20 +0000] [511] [INFO] Starting gunicorn 19.6.0
+[2018-09-24 13:21:20 +0000] [511] [INFO] Listening at: http://0.0.0.0:8000 (511)
+[2018-09-24 13:21:20 +0000] [511] [INFO] Using worker: sync
+[2018-09-24 13:21:20 +0000] [514] [INFO] Booting worker with pid: 514
+[2018-09-24 13:21:21 +0000] [516] [INFO] Booting worker with pid: 516
+[2018-09-24 13:21:21 +0000] [517] [INFO] Booting worker with pid: 517
+[2018-09-24 13:21:21 +0000] [520] [INFO] Booting worker with pid: 520
+[2018-09-24 13:21:21 +0000] [521] [INFO] Booting worker with pid: 521
+[2018-09-24 13:21:33 +0000] [511] [INFO] Handling signal: int
+[2018-09-24 16:21:33 +0300] [520] [INFO] Worker exiting (pid: 520)
+[2018-09-24 16:21:33 +0300] [517] [INFO] Worker exiting (pid: 517)
+[2018-09-24 16:21:33 +0300] [521] [INFO] Worker exiting (pid: 521)
+[2018-09-24 16:21:33 +0300] [514] [INFO] Worker exiting (pid: 514)
+[2018-09-24 16:21:33 +0300] [516] [INFO] Worker exiting (pid: 516)
+[2018-09-24 13:21:33 +0000] [511] [INFO] Shutting down: Master
+[2018-09-24 13:22:41 +0000] [601] [INFO] Starting gunicorn 19.6.0
+[2018-09-24 13:22:41 +0000] [601] [INFO] Listening at: http://0.0.0.0:8000 (601)
+[2018-09-24 13:22:41 +0000] [601] [INFO] Using worker: sync
+[2018-09-24 13:22:41 +0000] [604] [INFO] Booting worker with pid: 604
+[2018-09-24 13:22:41 +0000] [605] [INFO] Booting worker with pid: 605
+[2018-09-24 13:22:41 +0000] [608] [INFO] Booting worker with pid: 608
+[2018-09-24 13:22:41 +0000] [609] [INFO] Booting worker with pid: 609
+[2018-09-24 13:22:41 +0000] [611] [INFO] Booting worker with pid: 611
+[2018-09-24 13:24:14 +0000] [601] [INFO] Handling signal: int
+[2018-09-24 16:24:14 +0300] [604] [INFO] Worker exiting (pid: 604)
+[2018-09-24 16:24:14 +0300] [608] [INFO] Worker exiting (pid: 608)
+[2018-09-24 16:24:14 +0300] [609] [INFO] Worker exiting (pid: 609)
+[2018-09-24 16:24:14 +0300] [611] [INFO] Worker exiting (pid: 611)
+[2018-09-24 16:24:14 +0300] [605] [INFO] Worker exiting (pid: 605)
+[2018-09-24 13:24:14 +0000] [601] [INFO] Shutting down: Master
+[2018-09-24 13:25:11 +0000] [689] [INFO] Starting gunicorn 19.6.0
+[2018-09-24 13:25:11 +0000] [689] [INFO] Listening at: http://0.0.0.0:8000 (689)
+[2018-09-24 13:25:11 +0000] [689] [INFO] Using worker: sync
+[2018-09-24 13:25:11 +0000] [692] [INFO] Booting worker with pid: 692
+[2018-09-24 13:25:11 +0000] [694] [INFO] Booting worker with pid: 694
+[2018-09-24 13:25:11 +0000] [695] [INFO] Booting worker with pid: 695
+[2018-09-24 13:25:11 +0000] [696] [INFO] Booting worker with pid: 696
+[2018-09-24 13:25:11 +0000] [697] [INFO] Booting worker with pid: 697
