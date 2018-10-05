@@ -1,5 +1,7 @@
 #!/bin/sh
 sudo /etc/init.d/mysql start
+git config --global user.email "k0der85@mail.ru"
+git config --global user.name "Koder Sohm"
 sudo mysql -uroot -e "CREATE DATABASE stepik;"
 sudo mysql -uroot -e "CREATE USER stepik IDENTIFIED BY 'password1';"
 sudo mysql -uroot -e "GRANT ALL on stepik.* to stepik;"
