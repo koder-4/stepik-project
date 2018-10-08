@@ -8,6 +8,8 @@ sudo mysql -uroot -e "GRANT ALL on stepik.* to stepik;"
 sudo dpkg --purge python-django
 sudo pip3 uninstall Django
 sudo pip3 install Django==2.0 --upgrade
+python3 ../manage.py makemigrations
+python3 ../manage.py migrate
 sudo rm /etc/nginx/sites-enabled/default
 sudo ln -s /home/box/web/etc/default /etc/nginx/sites-enabled/site.conf
 sudo service nginx stop
