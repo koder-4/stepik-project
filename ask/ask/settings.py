@@ -75,18 +75,26 @@ WSGI_APPLICATION = 'ask.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'USER': 'stepik',
-        'NAME': 'stepik',
-        'PASSWORD': 'password1',
-        'HOST': '127.0.0.1',
-        'TEST': {
-            'NAME': 'mytestdatabase',
+if os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), '.local')):
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': '',
+        }
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'USER': 'stepik',
+            'NAME': 'stepik',
+            'PASSWORD': 'password1',
+            'HOST': '127.0.0.1',
+            'TEST': {
+                'NAME': 'mytestdatabase',
+            },
         },
-    },
-}
+    }
 
 
 # Password validation
