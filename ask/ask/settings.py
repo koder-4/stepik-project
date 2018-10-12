@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '&10d727$+y@j^e#8g2bs+72vvytphu$0f#4)%rr+vp$63&r+2='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -79,7 +79,7 @@ if os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), '.loc
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': '',
+            'NAME': 'ask.sqlite3',
         }
     }
 else:
