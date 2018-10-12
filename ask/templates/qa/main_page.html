@@ -6,8 +6,8 @@
 </head>
 <body>
 {% for q in questions %}
-    <h1>{{ question.title }}</h1>
-    <p>{{ question.text }}</p>
+    <h1>{{ q.title }}</h1>
+    <p>{{ q.text }}</p>
 {% endfor %}
     <nav><ul class="pagination">
     {% for p in paginator.page_range %}
@@ -16,7 +16,7 @@
     {% else %}
     <li>
     {% endif %}
-    <a href="{{ paginator.baseurl }}{{ p.number }}">
+    <a href="{{ paginator.baseurl }}{{ p }}">
     {{ p.number }}</a>
     </li>
     {% endfor %}
