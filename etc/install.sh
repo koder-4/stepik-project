@@ -16,3 +16,5 @@ sudo service nginx stop
 sudo service nginx start
 cd /home/box/web
 gunicorn hello:app --config etc/gunicorn.py -D
+cd /home/box/web/ask/
+gunicorn ask.wsgi --config ../etc/django.py -D

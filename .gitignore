@@ -1,9 +1,8 @@
 ask/.idea/**
-__pycache__/**
 __pycache__
 .pyc
 ask/venv/**
-ask/db.sqlite3
+*.sqlite3
 ask/access.log
 ask/error.log
 ask/ask/.local
