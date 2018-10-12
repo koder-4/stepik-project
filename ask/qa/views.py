@@ -22,8 +22,8 @@ def main_page(request, *args, **kwargs):
 
 
 def question(request, question_id):
-    question = get_object_or_404(Question, pk=question_id)
-    return render(request, 'qa/question.html', {question: question})
+    q = get_object_or_404(Question, pk=question_id)
+    return render(request, 'qa/question.html', {question: q})
 
 
 
