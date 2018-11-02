@@ -10,5 +10,11 @@
     {%  for a in q.answer_set.all %}
         <li>{{ a.text }}</li>
     {% endfor %}
+<form method="post">
+    {{ form.as_p }}
+    <input type="hidden" name="question_id" value="{{ q.id }}">
+    {% csrf_token %}
+    <button type="submit">Отправить</button>
+</form>
 </body>
 </html>

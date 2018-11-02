@@ -1,4 +1,4 @@
-from qa.views import test, main_page, question, popular
+from qa.views import test, main_page, question, popular, ask
 from django.urls import path, re_path
 
 
@@ -9,6 +9,6 @@ urlpatterns = [
     path('signup/', test, name='signup'),
     path('question/<int:question_id>/', question, name='question'),
     path('question/<int:question_id>', question, name='qs'),
-    path('ask/', test, name='ask'),
+    path('ask/', ask, name='ask'),
     path('popular/', popular, name='popular'),
     path('new/', test, name='new')]
