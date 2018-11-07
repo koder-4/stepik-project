@@ -32,7 +32,6 @@ def question(request, question_id):
             return HttpResponseRedirect(url)
     else:
         form = AnswerForm()
-        form.question_id = qq.id
     return render(request, 'qa/question.html', {'q': qq, 'form': form})
 
 

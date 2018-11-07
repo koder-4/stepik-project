@@ -11,10 +11,11 @@
         <li>{{ a.text }}</li>
     {% endfor %}
 <form method="post">
-    {{ form.as_p }}
-    <input type="hidden" name="question_id" value="{{ q.id }}">
+    <p><label for="id_text">Text:</label>
+        <textarea name="text" cols="40" rows="10" required id="id_text"></textarea>
+    </p><p><input type="hidden" name="question" value="{{ q.id }}"></p>
     {% csrf_token %}
-    <button type="submit">Отправить</button>
+    <p><button type="submit">Отправить</button></p>
 </form>
 </body>
 </html>

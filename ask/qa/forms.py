@@ -1,5 +1,6 @@
 from django import forms
 from qa.models import Question, Answer
+from django.shortcuts import get_object_or_404
 
 
 class AskForm (forms.Form):
@@ -14,9 +15,13 @@ class AskForm (forms.Form):
 
 class AnswerForm(forms.Form):
     text = forms.CharField(widget=forms.Textarea)
-    question_id = forms.IntegerField(widget=forms.HiddenInput())
+    question = forms.IntegerField(widget=forms.HiddenInput())
+
+    # def clean_question(self):
+    #     return get_object_or_404(Question, self.cleaned_data['question'])
 
     def save(self):
-        a = Answer(**self.cleaned_data)
+        q = get_object_or_404(Question, pk=self.cleaned_data['question'])
+        a = Answer(question=q, text=self.cleaned_data['text'], author=None)
         a.save()
         return a
