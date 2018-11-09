@@ -8,7 +8,8 @@ class AskForm (forms.Form):
     text = forms.CharField(widget=forms.Textarea)
 
     def save(self):
-        q = Question(**self.cleaned_data, author=self._user)
+        q = Question(**self.cleaned_data)
+        q.author = self._user
         q.save()
         return q
 
